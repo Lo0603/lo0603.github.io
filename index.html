@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My first webpage</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f0f8ff;
+        }
+
+        button {
+            font-size: 18px;
+            padding: 10px 20px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+            button:hover {
+                background-color: #45a049;
+            }
+
+        #message {
+            margin-top: 20px;
+            font-size: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Well caome!</h1>
+    <p>This is GitHub Pages and JavaScript practice</p>
+
+    <button onclick="showMessage()">CLICK</button>
+    <p id="message">Message will show here</p>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").textContent = "BOO!!!!";
+        }
+    </script>
+
+</body>
+</html>
